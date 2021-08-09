@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminUserProductsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#C31952"
+        android:id="@+id/r3_11"
+        android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Products "
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"></TextView>
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Product_list"
+        android:layout_below="@+id/r3_11"
+
+        >
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

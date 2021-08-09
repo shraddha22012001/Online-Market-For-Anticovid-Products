@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:id="@+id/rl_11"
+        android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Total Price ="
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"></TextView>
+
+    </RelativeLayout>
+     <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:text="Congratulations ,Your final order has been placed Successfully...soon it will be Verified..."
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:id="@+id/msg1"
+            android:gravity="center_horizontal"></TextView>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cart_list"
+        android:layout_below="@+id/rl_11"
+        android:layout_above="@+id/next_processe_btn"
+        >
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/next_processe_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:textSize="20dp"></Button>
+</RelativeLayout>
